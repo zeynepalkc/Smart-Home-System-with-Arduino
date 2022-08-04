@@ -1,20 +1,26 @@
 Arduino ile Akıllı Ev Sistemi Projesinin Özellikleri:
-Yangın Olup Olmadığını LCD’ye Yazdırır.
-Gaz Kaçağı Olup Olmadığını LCD’ye Yazdırır.
-Dışarıda Yağmur Yağıp Yağmadığını LCD’ye Yazdırır.
-Hava Sıcaklığını LCD’ye Yazdırır.
-Saksılarınızdaki Bitkilerin Nem Oranını LCD’ye Yazdırır Ve Eğer Nemsiz Ve Kuruysa Otomatik Sular.
+
++Yangın Olup Olmadığını LCD ekrana Yazdırır.
++Gaz Kaçağı Olup Olmadığını LCD ekrana Yazdırır.
++Dışarıda Yağmur Yağıp Yağmadığını LCD eknana Yazdırır.
++Hava Sıcaklığını LCD ekrana Yazdırır.
++Saksılarınızdaki Bitkilerin Nem Oranını LCD ekrana Yazdırır Ve Eğer Nemsiz Ve Kuruysa Otomatik Sular.
+
+
+
+
 Malzemeler:
-Arduino Uno
-MQ-6 Sensör
-Alev Sensörü
-Toprak Ve Nem Sensörü
-Yağmur Sensörü
-2×16 LCD Ekran
-DHT11 Sensör
-8 Tane LED (İstediğiniz Renkte)
-LED’ler için 330Ohm Direnç
-Pin Bağlantıları
+*Arduino Uno
+*MQ-6 Sensör
+*Alev Sensörü
+*Toprak Ve Nem Sensörü
+*Yağmur Sensörü
+*2×16 LCD Ekran
+*DHT11 Sensör
+*8 Tane LED (İstediğiniz Renkte)
+*LED’ler için 330Ohm Direnç
+
+Pin Bağlantıları:
 Yağmur Sensörü: A0
 Yağmur Ledi: D5
 Toprak Ve Nem Sensörü Pini: A1
@@ -29,20 +35,31 @@ Gaz Sensörü Kırmızı Led: D10
 LCD Ekran I2C Pinleri:
 SCL = A5
 SDA = A4
-Alev Sensörü: D11
-Alev Sensörü Yesil Led: D12
-Alev Sensörü Kırmızı Led: D13
-Alev Sensörü Buzzer: D8
+yangın Sensörü: D11
+yangın Sensörü Yesil Led: D12
+yangın Sensörü Kırmızı Led: D13
+yangınSensörü Buzzer: D8
 DHT11 Sensörü: D2
+
 Boş Pinler;
 Analog 3 pin ve Dijital 0 Pinleri Boştur
-Arkadaşlar Alev Sensörünün D0(Dijital 0)pinini Arduinoda Dijital 11 Pine Bağlıyoru
+
+yangın Sensörünün D0(Dijital 0)pinini Arduinoda Dijital 11 Pine Bağlıyoruz
+ 
 Gaz Sensörünün A0(Analog 0)pinini Arduinoda A2 Pinine Bağlıyoruz
+
 Toprak Ve Nem Sensörünün A0(Analog 0)pinini Arduinoda A1 Pinine Bağlıyoruz
+
 Yağmur Sensörünün A0(Analog 0)pinini Arduinoda A0 Bağlıyoruz
+
 DHT11 Sensörünün Sinyal Pinini Arduinoda D2 Pinine Bağlıyoruz
+
 LCD Ekranın SCL Pinini Arduinoda A5 Pinine Bağlıyoruz
+
 LCD Ekranın SDA Pinini Arduinoda A4 Pinine Bağlıyoruz
+
 Bütün GND’ler Ve VCC’ler Ortaktır
+
 VCC’ler +5V Bağlanılacak
+
 GND’ler GND Pinine Bağlanacak
